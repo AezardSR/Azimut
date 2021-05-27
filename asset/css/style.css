@@ -1,48 +1,77 @@
-h4{
+
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*---------fromulaire de contact-------*/
+#form{
+    background-color:#042553;
     text-align: center;
+    margin: 2.5% 0 2.5% 0;
 }
-.class{
-display: flex;
+
+#contenuFrom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr
+    1fr;
+    grid-template-areas:
+    "headerContact headerContact"
+    "zText zText"
+    "boutton boutton";
 }
-.class1{
-flex-direction: row;
-padding: 5px;
+#headerContact{
+    grid-area: headerContact;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
 }
-.form{
-    background-color:teal ;
-    text-align: center;
+#objet{
+    margin: 1%;
+    height: 50%;
+    width: 50%;
 }
-.class2{
-    display: flex; 
-    padding: 4px;
-    height: 50px;
+#objet input{
+    width: 80%;
+
 }
-.botton{
+#email{
+    margin: 1%;
+    width: 50%;
+    height: 50%;
+}
+#email input{
+    width: 70%;
+    height: 50%;
+}
+#zText{
+    grid-area: zText;
+}
+#zText input{
+    height:100%;
+    width: 90%;
+}
+.boutton{
+    grid-area: boutton;
+    margin: 2.5%;
+}
+/*-------------footer-----------*/
+#footerMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #042553; 
+    height: 20vh;
+}
+/*icon des réseau*/
+#reseau{
     display: flex;
 }
-.footer{
-    display: flex;
-    background-color:teal ; 
-    justify-content:space-evenly;
+#reseau img{
+    width: 40px;
 }
-.img1{
-    display: flex;
-    background-size: cover;
-    width:40px;
-    height:40px
-}
-.img2{
-    display: flex;
-    background-size: cover;
-    width:40px;
-    height:40px
-}
-.img3{
-    display: flex; 
-    background-size: cover;
-    width:40px;
-    height:40px
-}
-.credit{
-    
-}
+/*------------fin footer-----------*/
