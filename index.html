@@ -29,13 +29,14 @@
                 <button class="button">RECHERCHE</button>
             </div>
         </nav>
+        <!--slider-->
     <section id="slider">
         <div id="slider-container">
             <div class="menu">
                 <label for="slide-dot-1"></label>
                 <label for="slide-dot-2"></label>
                 <label for="slide-dot-3"></label>
-            </div>
+            </div id="radioSlider">
                 <input id="slide-dot-1" type="radio" name="slides" checked>
                 <div class="slide slide-1"></div>
 
@@ -50,6 +51,7 @@
             </div> 
         </div>
     </section>
+    <!--fin slider-->
     <section>
         <article id="a1">
             <h2>DECOUVERTE</h2>
@@ -88,6 +90,40 @@
             <p></p>
         </article>
     </section>
+        <!--formulaire de contact-->
+        <form id="form" > 
+            <h2>NOUS CONTACTER</h2>
+            <div id="contenuFrom">
+                <div id="headerContact">
+                    <div id="objet">
+                        <label for="Objet"> Objet : </label>
+                        <input type="text" id="objet" name="objet">
+                    </div>
+                    <div id="email">
+                        <label for="Email">Email:</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div id="zText">
+                    <label for="textMail"></label>
+                    <textarea name="textMail" id="textMail" cols="" rows=""></textarea>
+                </div>
+                <div class="boutton">
+                    <input type="submit" value="envoyer">
+                </div>
+            </div>
+        </form>
+        <!--Footer Main page-->
+        <footer id="footerMain">
+            <div id="reseau">
+                <a href=""><img src="asset/img/facebook.png" alt=""></a>
+                <a href=""><img src="asset/img/twitter.png" alt=""></a>
+                <a href=""><img src="asset/img/youtube.png" alt=""></a>
+                <a href=""><img src="asset/img/instagram.png" alt=""></a>
+            </div>
+                 <P>Réalisé par Charlotte, Sébastien, Léa, Romain.</P>
+                 <a href="mentionsLegales.html">Mentions légales</a>
+        </footer>
 
 </body>
 </html>
