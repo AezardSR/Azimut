@@ -123,3 +123,95 @@ article{
     margin: 0px;
 }
 
+/*-----------Slider CSS-------------*/
+body{
+    height: 100vh;
+    width: 100%;
+}
+/*gestion de taille de la section du slider*/
+#slider{
+      height: 300px;
+      display: flex;
+      justify-content: center;
+}
+/**/
+#slider-container{
+    height:100%;
+    width: 90%;
+    position: relative;
+    overflow: hidden; 
+    text-align: center;
+}
+/*position du menu*/
+.menu {
+    position: relative;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    top: 90%;
+}
+/*style des radio pour les inputs*/ 
+.menu label {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: rgb(225, 220, 220);
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+}
+/*changement de couleur au survol de des inputs radio*/
+.menu label:hover {
+    background: #042553;
+}
+/*sert à faire dispairaite les input de base*/
+input{
+display: none;
+}
+/*div contenant les img du slider*/
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left .75s;
+}
+/*j'ai pas encore bien compris*/
+/*selecteur en css*/
+[id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .5s;
+}
+/*gestion du contenu du slider*/
+.slide-1 {
+    background:no-repeat center/100% url(../img/slider1.jpg);
+}
+.slide-2 {
+    background:no-repeat center/100%  url(../img/slide2.jpg);
+    background-color: white;
+}
+.slide-3{
+    background: white;
+}
+
+/*Media pour les tablettes*/
+@media screen and (max-width: 1024px) {
+    .menu {
+        top: 80%;
+    }
+
+    
+}
+
+/*Media pour les Télephone*/
+@media screen and (max-width:600px) {
+    .menu {
+        top: 70%;
+    }
+    
+}
+7
