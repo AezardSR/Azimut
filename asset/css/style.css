@@ -200,7 +200,7 @@ display: none;
 .slide-3{
     background: #042553;
 }
-
+/**/
 /*Media pour les tablettes*/
 @media screen and (max-width: 1024px) {
     .menu {
@@ -217,4 +217,4 @@ display: none;
     }
     
 }
-7
+
