@@ -59,6 +59,7 @@ display: none;
 }
 /*j'ai pas encore bien compris*/
 /*selecteur en css*/
+/* /!\ ne pas toucher, risque d'explosion */
 [id^="slide"]:checked + .slide {
     left: 0;
     z-index: 100;
