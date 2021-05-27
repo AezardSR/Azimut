@@ -1,5 +1,5 @@
 
-body{
+body, h2{
     color: white;
     margin: 0;
     padding: 0;
@@ -11,16 +11,20 @@ body{
     text-align: center;
     margin: 2.5% 0 2.5% 0;
 }
+h2{
+    padding-top: 1%;
+}
 
 #contenuFrom{
+    margin-top: 2%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr  ;
     grid-template-rows: 1fr 2fr
     1fr;
     grid-template-areas:
-    "headerContact headerContact"
-    "zText zText"
-    "boutton boutton";
+    "headerContact headerContact "
+    "zText zText "
+    ". boutton";
 }
 #headerContact{
     grid-area: headerContact;
@@ -30,33 +34,35 @@ body{
 
 }
 #objet{
-    margin: 1%;
-    height: 50%;
+    height: 60%;
     width: 50%;
 }
 #objet input{
+    margin: 0;
     width: 80%;
 
 }
 #email{
-    margin: 1%;
     width: 50%;
     height: 50%;
 }
 #email input{
+    margin: 0;
     width: 70%;
-    height: 50%;
+    height: 80%;
 }
 #zText{
     grid-area: zText;
 }
-#zText input{
+#zText textarea{
     height:100%;
-    width: 90%;
+    width: 89%;
 }
+
 .boutton{
     grid-area: boutton;
-    margin: 2.5%;
+    padding: 2.5% 0 2.5% 70%;
+    
 }
 /*-------------footer-----------*/
 #footerMain{
@@ -67,11 +73,21 @@ body{
     background-color: #042553; 
     height: 20vh;
 }
+#footerMain p,a{
+    color: white;
+    text-decoration: none;
+}
+#footerMain a:hover{
+    color: red;
+}
 /*icon des réseau*/
 #reseau{
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 #reseau img{
     width: 40px;
+    margin-left: 10px;
 }
 /*------------fin footer-----------*/
