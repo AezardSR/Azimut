@@ -1,128 +1,70 @@
 /*On retire les marge par défaut des elemements*/
-body, h1, h2, h3, h4, h5, h6{
+body, h1, h2, h4, h5, h6{
     margin: 0;
     padding: 0;
     color: white;
 }
-
-.class1{
-display: flex;
-flex-direction: row;
-padding: 5px;
-background-color: teal;
-}
-h4{
-    text-align: center;
-}
-.class2{
-    display: flex;
-    justify-content: right;
-}
-
-
+/*-----------------header-----------------*/
 header{
-background-image: url(../img/banner.jpg);
-font-size: 150px;
-font-family: 'Quicksand', sans-serif;
-text-align: center;
-width: 100%;
-height: 700px;
-display: flex;
-justify-content: center;
-background-size: cover;
-}
-    
-
-.button {
-    background-color: #042553;
-    color: white;
-    padding: 40px 50px;
-    text-align: center;
-    display: inline-block;
-    margin: 20px 4px;
-    font-family:'Quicksand', sans-serif;
-  }
-  
-.flex nav{
-   background-color: #042553;
-   font-size: 50px;
-}
-
-#navbar a{
-    background-color:#042553;
-    border: none;
-    color: white;
-    padding: 30px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px 10px;
-    cursor: pointer;
-  }
-
-
-section{
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 500px 500px 500px;
-    column-gap: 3%;
-    row-gap: 50px; 
-    text-align: center;
-    color: white;
-    grid-template-areas:
-    "article1 arcticle2 article3"
-    "article4 article5 article6";
-}
-article{
+    font-size: 90px;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 55vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color: #042553;    
+    color: white;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), no-repeat center/100% url(../img/banner.jpg);
+}
+/*-----------navbar-----------*/
+#burger{
+    display: none;
+    margin: auto;
+    width: 40px;
+}
+.test {
+        height: 30px;
 }
 
-#a1>h2{
-    background-color: coral;
-    width: 100%;
-    height: 60px;
-    background-size: cover;
-    margin: 0px;
+.bouttonRecherche{
+    background-color: #62220A;
+    border: unset;
+    width: 40px;
+    border-radius: 0 20px 20px 0;
 }
-#a2>h2{
-    background-color: #ecd346;
-    width: 100%;
-    height: 60px;
-    background-size: cover;
-    margin: 0px;
+.barreRecherche{
+    width: 20rem;
 }
-#a3>h2{
-    background-color: #2d8aa7;
-    width: 100%;
-    height: 60px;
-    background-size: cover;
-    margin: 0px;
+.recherche{ 
+    display: flex;
+    font-family:'Quicksand', sans-serif;
+    margin-right: 1%;
+
 }
-#a4>h2{
-    background-color: coral;
-    width: 100%;
-    height: 60px;
-    background-size: cover;
-    margin: 0px;
+    .flex{
+        background-color: #042553;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        height: 90px;
+      }
+    .flex nav{
+       font-size: 20px;
+    }
+    
+    #navbar a{
+        padding: 10px 25px 30px 25px;
+        text-decoration: none;
+        color: white;
 }
-#a5>h2{
-    background-color: #ecd346;
-    width: 100%;
-    height: 60px;
-    background-size: cover;
-    margin: 0px;
+
+#navbar a:hover{
+    border-bottom: 4px solid white;
 }
-#a6>h2{
-    background-color: #2d8aa7;
-    width: 100%;
-    height: 60px;
-    background-size: cover;
-    margin: 0px;
-}
+
+
 
 /*-----------Slider CSS-------------*/
 
@@ -207,22 +149,131 @@ display: none;
     padding: 2% 0 0 0;
 }
 
-/*Media pour les tablettes*/
-@media screen and (max-width: 1024px) {
-    .menu {
-        top: 80%;
-    }
+/*---------------articles---------------*/
+/*Positionnement des articles*/
+#articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    column-gap: 3%;
+    row-gap: 50px;
+    margin: 0 5% 0 5%;
+    text-align: center;
+    color: white;
 
-    
+}
+article p{
+    margin-right: 2.5%;
+    margin-left: 2.5%;
 }
 
-/*Media pour les Télephone*/
-@media screen and (max-width:600px) {
-    .menu {
-        top: 70%;
-    }
-    
+/*Propriétés des articles*/
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #042553;
 }
+
+/*Propriétés bandeaux articles*/
+.banner{
+    width: 100%;
+    height: 40px;
+    background-size: cover;
+    margin: 0px;
+    padding-top: 3%;
+}
+
+/*Propriétés des images des articles*/
+.image{
+    background-origin: center;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+
+/*Article 1*/
+#a1>h2{
+    background-color: coral;   
+}
+#img1{
+    background-image: url("../img/systeme_solaire.png");
+}
+
+/*Article 2*/
+#a2>h2{
+    background-color: #ecd346;
+}
+#img2{
+    background-image: url("../img/imgslide2.png");  
+}
+
+/*Article 3*/
+#a3>h2{
+    background-color: #2d8aa7;
+}
+#img3{
+    background-image: url("../img/realistic_galaxy.jpg");
+}
+
+/*Article 4*/
+#a4>h2{
+    background-color: coral;
+}
+#img4{
+    background-image: url("../img/imgslider1.png");
+}
+
+/*Article 5*/
+#a5>h2{
+    background-color: #ecd346;
+}
+#img5{
+    background-image: url("../img/ceinture-asteroides.png");
+}
+
+/*Article 6*/
+#a6>h2{
+    background-color: #2d8aa7;
+}
+#img6{
+    background-image: url("../img/montre_astro.jpg");
+}
+
+/*Images d'intersection*/
+#astro{
+    background-image: url("../img/4698692.png");
+    background-origin: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+    margin: 4% 0 4% 0;
+}
+#satelite{
+    background-image: url(../img/4698769.png);
+    background-origin: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+    margin: 4% 0 4% 0;
+}
+#earth{
+    background-image: url("../img/4698710.png");
+    background-origin: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+    margin: 4% 0 4% 0;
+}
+
 
 /*---------fromulaire de contact-------*/
 #form{
@@ -237,8 +288,8 @@ h2{
 #contenuFrom{
     margin-top: 2%;
     display: grid;
-    grid-template-columns: 1fr 1fr  ;
-    grid-template-rows: 1fr 2fr
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr
     1fr;
     grid-template-areas:
     "headerContact headerContact "
@@ -247,27 +298,32 @@ h2{
 }
 #headerContact{
     grid-area: headerContact;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    row-gap: 10%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
     width: 100%;
-
 }
 #objet{
+    grid-row: 2;
+    margin-left: 10%;
     height: 60%;
     width: 50%;
 }
 #objet input{
     margin: 0;
     width: 80%;
+    height: 80%;
 
 }
 #email{
-    width: 50%;
-    height: 50%;
+    margin-left: 6%;
+    width: 60%;
+    height: 80%;
 }
 #email input{
     margin: 0;
-    width: 70%;
+    width: 68%;
     height: 80%;
 }
 #zText{
@@ -282,6 +338,18 @@ h2{
     grid-area: boutton;
     padding: 2.5% 0 2.5% 70%;
     
+}
+
+#contact{
+    grid-row: 1/3;
+    background-origin: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+    margin: 4% 0 4% 0;
+    background-image: url(../img/4698746.png);
 }
 /*-------------footer-----------*/
 #footerMain{
@@ -310,4 +378,49 @@ h2{
     margin-left: 10px;
 }
 /*------------fin footer-----------*/
+/*Media pour les tablettes*/
+@media screen and (max-width: 1024px) {
+    .menu {
+        top: 80%;
+    }
+    nav, .recherche{
+        display:none;
+    }
+    #burger{
+        display: block;
+    }
+    h1{
+        font-size: 60px;
+    }
+    header{
+        height: 200px;
+    }
 
+    #contenuFrom{
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: 1fr  ;
+        grid-template-rows: 1fr 1fr 2fr
+        1fr;
+        grid-template-areas:
+        "headerContact"
+        "zText "
+        ". boutton";
+    }
+    #articles{
+        grid-template-columns: 1fr;
+    }
+
+    
+}
+
+/*Media pour les Télephone*/
+@media screen and (max-width:600px) {
+    .menu {
+        top: 70%;
+    }
+    header{
+        height: 100px;
+    }
+    
+}
