@@ -10,6 +10,7 @@ body{
       height: 300px;
       display: flex;
       justify-content: center;
+      margin: 2.5% 0 2.5% 0;
 }
 /**/
 #slider-container{
