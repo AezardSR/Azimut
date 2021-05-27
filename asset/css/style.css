@@ -1,4 +1,128 @@
 
+.class1{
+display: flex;
+flex-direction: row;
+padding: 5px;
+background-color: teal;
+}
+h4{
+    text-align: center;
+}
+.class2{
+    display: flex;
+    justify-content: right;
+}
+
+
+header{
+background-image: url(../img/banner.jpg);
+font-size: 150px;
+font-family: 'Quicksand', sans-serif;
+text-align: center;
+width: 100%;
+height: 700px;
+display: flex;
+justify-content: center;
+background-size: cover;
+
+}
+input,
+label,button {
+    margin: 2rem 0;
+    height: 50px;
+    
+}
+.button {
+    background-color: #042553;
+    color: white;
+    padding: 40px 50px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px 4px;
+    font-family:'Quicksand', sans-serif;
+  }
+  
+.flex nav{
+   background-color: #042553;
+   font-size: 50px;
+}
+
+#navbar a{
+    background-color:#042553;
+    border: none;
+    color: white;
+    padding: 30px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 10px;
+    cursor: pointer;
+  }
+
+
+section{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 500px 500px 500px;
+    column-gap: 3%;
+    row-gap: 50px; 
+    text-align: center;
+    color: white;
+    grid-template-areas:
+    "article1 arcticle2 article3"
+    "article4 article5 article6";
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #042553;    
+}
+
+#a1>h2{
+    background-color: coral;
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+    margin: 0px;
+}
+#a2>h2{
+    background-color: #ecd346;
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+    margin: 0px;
+}
+#a3>h2{
+    background-color: #2d8aa7;
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+    margin: 0px;
+}
+#a4>h2{
+    background-color: coral;
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+    margin: 0px;
+}
+#a5>h2{
+    background-color: #ecd346;
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+    margin: 0px;
+}
+#a6>h2{
+    background-color: #2d8aa7;
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+    margin: 0px;
+}
+
 /*-----------Slider CSS-------------*/
 body{
     height: 100vh;
@@ -93,3 +217,4 @@ display: none;
     }
     
 }
+7
