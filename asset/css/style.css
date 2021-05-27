@@ -68,6 +68,7 @@ display: none;
 }
 .slide-2 {
     background:no-repeat center/100%  url(../img/slide2.jpg);
+    background-color: white;
 }
 .slide-3{
     background: white;
