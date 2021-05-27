@@ -1,13 +1,48 @@
-.class1{
-display: flex;
-flex-direction: row;
-padding: 5px;
-background-color: teal;
-}
 h4{
     text-align: center;
 }
+.class{
+display: flex;
+}
+.class1{
+flex-direction: row;
+padding: 5px;
+}
+.form{
+    background-color:teal ;
+    text-align: center;
+}
 .class2{
+    display: flex; 
+    padding: 4px;
+    height: 50px;
+}
+.botton{
     display: flex;
-    justify-content: right;
+}
+.footer{
+    display: flex;
+    background-color:teal ; 
+    justify-content:space-evenly;
+}
+.img1{
+    display: flex;
+    background-size: cover;
+    width:40px;
+    height:40px
+}
+.img2{
+    display: flex;
+    background-size: cover;
+    width:40px;
+    height:40px
+}
+.img3{
+    display: flex; 
+    background-size: cover;
+    width:40px;
+    height:40px
+}
+.credit{
+    
 }
