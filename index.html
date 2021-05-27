@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="" >
+    <meta name="description" content="Azimut à pour but de vous informée et de vous enseigné le monde de l'espace, alors n'hesite pas à nous rejoindre !" >
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/style.css">
-
     <title>AZIMUT</title>
-   
 </head>
 <body>
     <!--header-->
@@ -18,7 +16,7 @@
         <h1>AZIMUT</h1>
    </header>
    <!--Nav-->
-    <div class="flex">
+    <div id="containerNavbar">
         <nav id="navbar">
             <a href="http://">Découverte</a>
             <a href="http://">Actualités</a>
@@ -27,13 +25,13 @@
             <a href="http://">Boutique</a>
         </nav>
         <!--Barre de recherche-->
-        <div class="recherche">
-            <label class="test" for="site-search"></label>
-            <input class="barreRecherche" type="search" id="site-search" aria-label="Search through site content"
+        <div id="recherche">
+            <label for="site-search"></label>
+            <input id="barreRecherche" type="search" id="site-search" aria-label="Search through site content"
             name="RECHERCHE" placeholder="RECHERCHE">
-            <button class="bouttonRecherche" type="submit"></button>
+            <button id="bouttonRecherche" type="submit"><img src="asset/img/loupe.png" alt="icone de loupe"></button>
         </div>
-        <img id="burger" src="asset/img/menu burger.png" alt="">
+        <img id="burger" src="asset/img/menu burger.png" alt="icon menu burger">
     </div>
 
     <div id="earth"></div>
@@ -53,7 +51,7 @@
 
                 <input id="slide-dot-3" type="radio" name="slides" checked>
                 <div class="slide slide-3"> 
-                    <h2>presentation de notre site web</h2>
+                    <h2>Bienvenu sur Azimut, le site des actus spaciale</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, minima qui explicabo consequatur expedita quis tempore dolore. Nobis totam delectus, iusto ex aut consectetur eum amet, voluptatum distinctio voluptatibus architecto?
                 </p>
             </div> 
@@ -65,7 +63,7 @@
         <article id="a1">
             <h2 class="banner">DECOUVERTE</h2>
                 <div id="img1" class="image"></div>
-                <h3>Le systÃ¨me solaire</h3>
+                <h3>Le système solaire</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore assumenda, magnam vero aliquid voluptatibus earum minima alias unde quae totam at aliquam nesciunt quos, nostrum rem dolorem laudantium harum aperiam recusandae voluptatem voluptate! Minus fuga dolorem architecto fugiat quidem odio asperiores suscipit, officia veniam excepturi dicta ipsum, itaque repudiandae magnam.</p>
         </article>
         <article id="a2">
@@ -100,9 +98,6 @@
         </article>
     </section>
         <div id="satelite"></div>
-
-
-    
         <!--formulaire de contact-->
         <form id="form" > 
             <h2>NOUS CONTACTER</h2>
@@ -116,13 +111,13 @@
                         <label for="Objet"> Objet : </label>
                         <input type="text" id="objet" name="objet">
                     </div>
-                    <div id="contact"></div>
                 </div>
+                <div id="contact"></div>
                 <div id="zText">
                     <label for="textMail"></label>
                     <textarea name="textMail" id="textMail" cols="" rows=""></textarea>
                 </div>
-                <div class="boutton">
+                <div id="bouttonEnvoie">
                     <input type="submit" value="envoyer">
                 </div>
             </div>
@@ -130,10 +125,10 @@
         <!--Footer Main page-->
         <footer id="footerMain">
             <div id="reseau">
-                <a href=""><img src="asset/img/facebook.png" alt=""></a>
-                <a href=""><img src="asset/img/twitter.png" alt=""></a>
-                <a href=""><img src="asset/img/youtube.png" alt=""></a>
-                <a href=""><img src="asset/img/instagram.png" alt=""></a>
+                <a href=""><img src="asset/img/facebook.png" alt="icon facebook"></a>
+                <a href=""><img src="asset/img/twitter.png" alt="icon twitter"></a>
+                <a href=""><img src="asset/img/youtube.png" alt="icon youtube"></a>
+                <a href=""><img src="asset/img/instagram.png" alt="icon instagram"></a>
             </div>
                  <P>Réalisé par Charlotte, Sébastien, Léa, Romain.</P>
                  <a href="mentionsLegales.html">Mentions légales</a>
