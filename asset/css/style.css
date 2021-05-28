@@ -127,7 +127,7 @@ border-bottom: 4px solid white;
     background: #042553;
 }
 /*sert à faire dispairaite les input de base*/
-#radioSlider{
+input[name=slides]{
 display: none;
 }
 /*div contenant les img du slider*/
