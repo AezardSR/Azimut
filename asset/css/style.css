@@ -417,7 +417,7 @@ input[value=envoyer]{
 @media screen and (max-width: 1024px) {
     /*changement de place du menu du slider pour le mode tablette*/
     .menu {
-        top: 80%;
+        top: 90%;
     }
     /*On fait disparaitre la barre de navigation ainsi que la barre de recherche*/
     nav, #recherche{
@@ -470,7 +470,7 @@ input[value=envoyer]{
 @media screen and (max-width:600px) {
     /*modification de l'emplacement de menu du slider pour le mode telephone*/
     .menu {
-        top: 70%;
+        top: 90%;
     }
     /*modification de la taille du header pour la version mobile*/
     header{
