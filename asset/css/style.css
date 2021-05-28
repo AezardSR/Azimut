@@ -76,7 +76,7 @@ border-bottom: 4 px solid white;
     border: unset;
 }
 /*modification */
-#barreRecheche::placeholder{
+::placeholder{
     color: #01132C;
     padding-left: 5%;
 }
@@ -366,6 +366,10 @@ form h2{
 }
 #bouttonEnvoie input:hover{
     background: #04306C;
+}
+/*changement de couleur du text du boutton*/
+input[value=envoyer]{
+    color: white;
 }
 
 /*petit image du formulaire de contact */
