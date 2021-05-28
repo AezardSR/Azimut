@@ -480,4 +480,11 @@ input[value=envoyer]{
     #contact{
         height: 40px;
     }
+    .slide-3 p{
+        font-size: 15px;
+    }
+    .slide-3 h2{
+        padding: 2% 0 0 0;
+        font-size: 17px;
+    }
 }
