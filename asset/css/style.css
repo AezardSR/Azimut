@@ -43,7 +43,7 @@ header{
 }
 /*barre au survole du a*/
 #navbar a:hover{
-border-bottom: 4 px solid white;
+border-bottom: 4px solid white;
 }
 /*gestion du menu burger, mise en forme et place*/
 #burger{
